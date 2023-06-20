@@ -36,7 +36,7 @@
     %chapterinoneline,         % Place the chapter title and chapter number on one line
     consistentlayout,          % Have the same layout for special chapters: 
                                % declaration, abstract and acknowledgements
-]{MastersDoctoralThesis}
+]{zhawreport}
 
 % Uncomment the following lines to only include a subset of chapters.
 % This is useful for long documents, as typesetting takes a bit of time
@@ -69,7 +69,7 @@
 % - Meta information of PDF
 
 \thesistitle{Project Title}             % Thesis title,              command: \ttitle
-\thesistype{Track Module 1}             % Type of thesis (e.g. Master Thesis) \ttype
+\thesistype{Project Report}             % Type of thesis (e.g. Master Thesis) \ttype
 \thesisdate{\today}                     % Date of submission                  \tdate
 \keywords{gravity, physics, disruptive science}
                                         % Keywords for the thesis,            \keywordnames
@@ -80,7 +80,8 @@
 \studyprogramlink{https://www.zhaw.ch/en/lsfm/study/master/applied-computational-life-sciences/}
                                         % Link to study program               \studyproglink
 
-\supervisorA{Dr. Albert Einstein}       % Name of supervisor 1,               \supnameA
+% For the industry partner
+\supervisorA{Steve Jobs, Apple Inc.}       % Name of supervisor 1,               \supnameA
 \supervisorAmail{e=mc2@zhaw.ch}         % Email address of supervisor 1,      \supmailA
 \supervisorAweb{https://en.wikipedia.org/wiki/Albert\_Einstein}  %            \supwebA
 \supervisorAinfo{                       % Formatted info about supervisor 1:  \supinfoA
@@ -91,33 +92,34 @@
 }
 
 % Keep empty if there is no supervisor 2: \supervisorB{}
-\supervisorB{Isaac Newton}              % Name of supervisor 2,               \supnameB
-\supervisorBmail{f=am@newton.com}       % Email address of supervisor 2,      \supmailB
-\supervisorBweb{https://en.wikipedia.org/wiki/John\_Locke}                  % \supwebB
-\supervisorBinfo{                       % Formatted info about supervisor 2:  \supinfoB
-    \supnameB\\
-    University of Cambridge\\
-    Email: \href{mailto:\supmailB}{\supmailB}\\
-    Web: \href{\supwebB}{Link}
-}
+\supervisorB{}
+%\supervisorB{Isaac Newton}              % Name of supervisor 2,               \supnameB
+%\supervisorBmail{f=am@newton.com}       % Email address of supervisor 2,      \supmailB
+%\supervisorBweb{https://en.wikipedia.org/wiki/John\_Locke}                  % \supwebB
+%\supervisorBinfo{                       % Formatted info about supervisor 2:  \supinfoB
+%    \supnameB\\
+%    University of Cambridge\\
+%    Email: \href{mailto:\supmailB}{\supmailB}\\
+%    Web: \href{\supwebB}{Link}
+%}
 
 \university{Zurich University of Applied Sciences}
                                         % University name                     \univname
 \universitygerman{Zürcher Hochschule für Angewandte Wissenschaften}
                                         % University, in German               \univnameger
-\department{Life Sciences and Facility Management} 
+\department{School of Engineering} 
                                         % Department,                         \deptname
-\institute{Institute of Computational Life Sciences} 
+\institute{Institute of Applied Information Technology} 
                                         % Institute,                          \instname
-\group{Center of Computational Health} 
+\group{Software Engineering} 
                                         % Research group                      \groupname
 
 % Links
 \universitylink      {https://www.zhaw.ch/en/university/}                   % \univlink
 \universitylinkgerman{https://www.zhaw.ch/de/university/}                   % \univlinkger
-\departmentlink      {https://www.zhaw.ch/de/lsfm/}                         % \deptlink
-\institutelink       {https://www.zhaw.ch/en/lsfm/institutes-centres/icls/} % \instlink
-\grouplink           {https://www.zhaw.ch/en/lsfm/institutes-centres/icls/computational-health/} % \grplink
+\departmentlink      {https://www.zhaw.ch/en/engineering/}                         % \deptlink
+\institutelink       {https://www.zhaw.ch/en/engineering/institutes-centres/init/} % \instlink
+\grouplink           {https://www.zhaw.ch/en/engineering/institutes-centres/init/software-engineering/} % \grplink
 
 
 
@@ -137,28 +139,11 @@
 % TITLE PAGE AND IMPRINT
 %----------------------------------------------------------------------------------------
 \include{Front/titlepage}
-\let\cleardoublepage\clearpage
-\include{Front/imprint}
-
-
-%----------------------------------------------------------------------------------------
-% DECLARATION
-%----------------------------------------------------------------------------------------
-% Comment out this section if the declaration of originality from ZHAW is used.
-\include{Front/declaration}
-\cleardoublepage
-
 
 %----------------------------------------------------------------------------------------
 % ABSTRACT
 %----------------------------------------------------------------------------------------
 \include{Front/abstract}
-
-
-%----------------------------------------------------------------------------------------
-% ACKNOWLEDGEMENTS
-%----------------------------------------------------------------------------------------
-\include{Front/acknowledgements}
 
 
 %----------------------------------------------------------------------------------------
@@ -173,13 +158,13 @@
 %----------------------------------------------------------------------------------------
 % ABBREVIATIONS / SYMBOLS
 %----------------------------------------------------------------------------------------
-\include{Front/symbols}
+%\include{Front/symbols}
 
 
 %----------------------------------------------------------------------------------------
 % DEDICATION
 %----------------------------------------------------------------------------------------
-\dedicatory{For/Dedicated to/To my\ldots} 
+%\dedicatory{For/Dedicated to/To my\ldots} 
 
 
 %----------------------------------------------------------------------------------------
@@ -209,7 +194,7 @@
 % from https://www.zhaw.ch/en/lsfm/study/studiweb/master-ls/masters-thesis/
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
-\include{Appendices/DeclarationOfOriginalityZHAW} 
+%\include{Appendices/DeclarationOfOriginalityZHAW} 
 
 
 %----------------------------------------------------------------------------------------
